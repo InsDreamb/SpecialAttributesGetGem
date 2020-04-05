@@ -1,0 +1,18 @@
+message:
+  command: "&6/<command> <command_sub> <command_args> §7————<command_description>"
+  permission: "&c你没有权限这么做!"
+  console: "后台禁止使用该指令"
+  open_gui: "&a你打开了取宝石界面"
+  move_gui: "&4你不能这么做!"
+  dont_have_empty: "&c请保持背包有空位"
+  take_money: "&c你花费了 &e <money> 金钱"
+  reload_process: "&b重载配置中.."
+  reload_success: "&a重载配置成功!"
+  reload_fault: "&c重载配置失败!"
+  weapon_not_found: "&c请放入武器!"
+  process_fault: "&c取不了宝石了!"
+  process_success: "&a已发送宝石到您的背包"
+  vault_not_enough: "&4你的钱不够!! 需要&6 <money> 元"
+Gem:
+  gem: 2333.0
+

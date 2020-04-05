@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SpecialAttributesGetGem">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpecialAttributesGetGem</output-path>
+    <root id="archive" name="SpecialAttributesGetGem.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/src/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+      <element id="module-output" name="SpecialAttributesGetGem" />
+    </root>
+  </artifact>
+</component>

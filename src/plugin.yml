@@ -1,0 +1,13 @@
+name: SpecialAttributesGetGem
+version: 1.3.0
+main: com.github.insdreamb.specialattributesgetgem.Main
+depend:
+  - SpecialAttributes
+  - Vault
+commands:
+  sag:
+permissions:
+  sag.open:
+    default: true
+  sag.reload:
+    default: op
