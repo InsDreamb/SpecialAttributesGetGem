@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -57,5 +58,15 @@ public class Listener implements org.bukkit.event.Listener {
                         player.getInventory().addItem(weapon);
             }
         }
+    }
+
+    @EventHandler
+    public void onQuitEvent(PlayerQuitEvent event){
+        Player player = event.getPlayer();
+            ItemStack weapon = Variable.inventoryMap.get(player.getName()).getInventory().getItem(Variable.WEAOPN);
+            if (weapon != null && weapon.getType() != Material.AIR){
+                Variable.inventoryMap.remove(player.getName());
+                player.getInventory().addItem(weapon);
+            }
     }
 }

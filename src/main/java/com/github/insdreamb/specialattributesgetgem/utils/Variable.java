@@ -25,7 +25,7 @@ public class Variable {
         Inventory inventory = Bukkit.createInventory(Bukkit.getPlayer(player),45,"§b取宝石界面");
         //黑色玻璃板
         ItemStack black = new ItemStack(Material.STAINED_GLASS_PANE);
-        black.setDurability((byte)0);
+        black.setDurability((byte)15);
         //橙色玻璃板
         ItemStack orange = new ItemStack(Material.STAINED_GLASS_PANE);
         orange.setDurability((byte)1);

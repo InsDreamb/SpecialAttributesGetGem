@@ -29,7 +29,9 @@ public class Lore {
         ItemStack anvil = clearLore();
         anvil.setItemMeta(setMeta(anvil, "§c该物品取不了宝石!"));
         inventory.setItem(Variable.ANVIL, anvil);
-        inventory.setItem(Variable.GEM,new ItemStack(Material.AIR));
+        ItemStack glass = new ItemStack(Material.STAINED_GLASS_PANE);
+        glass.setDurability((byte)7);
+        inventory.setItem(Variable.GEM,glass);
     }
 
     /** 放入物品或者拿出物品更新Lore **/
